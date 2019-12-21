@@ -50,14 +50,14 @@ cursor = conn.cursor()
 print("""
 Welcome to Will's online dictionary.
 Enter a word and I'll give you any and all definitions for it.
-When you are done type 'Exit' to quit.doc
+When you are done type 'ExitMe' to quit.doc
 Have fun!
 """)
 
 while True:
     word = input("Enter a word: ")
     word = word.lower()
-    if word != 'exit':
+    if word != 'exitme':
         definitions = Get_Definition(word)
         if isinstance(definitions, str):
             print(definitions)
